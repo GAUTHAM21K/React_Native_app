@@ -3,7 +3,7 @@ import { ENV } from '../config/env.js';
 import { db } from '../config/db.js';
 import { favorites } from './database/schema.js';
 import { and, eq } from 'drizzle-orm';
-import {job} from '../config/cron.js';
+import job from '../config/cron.js';
 
 // Start the cron job{
 if (ENV.NODE_ENV === "production" ){
